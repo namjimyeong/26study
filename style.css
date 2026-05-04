@@ -1,0 +1,184 @@
+html, body {
+
+    margin: 0;
+    width: 100%;
+    height: 1005;
+    overflow: hidden;
+    touch-action: none;
+
+} 
+
+.container {
+    
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+.background {
+    
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-image: url('bg.png');
+
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+
+}
+
+.content {
+    
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+.title {
+    
+    width: 100%;
+    /* height: 100px; */
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.title h1 {
+
+    color:white;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 45%;
+    font-family: "Zen Dots", sans-serif;
+    font-weight: normal;
+    font-size: 12vw;
+
+}
+
+.feature {
+    width: 100%;
+}
+
+.profile {
+
+    width: 95%;
+    height: 60px;
+
+    margin: 0 auto;
+
+    margin-top: 0%;
+
+    background-image: url('profile.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    transition: transform 0.3s ease;
+
+}
+
+
+.earth {
+
+    width: 100%;
+    height: 280px;
+
+    margin: 0 auto;
+
+    margin-top: 0%;
+
+    background-image: url('earth.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.list {
+    display: flex;         
+    justify-content: space-around; 
+    align-items: center;   
+    width: 100%;
+    margin-top: -20%;        
+}
+
+
+.planet1, .planet2, .planet3, .planet4 {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+
+.planet1 {
+    width: 75px;  
+    height: 75px; 
+    background-image: url('planet1.png');
+    
+    margin-top: -60px;
+    margin-left: 20px;
+}
+
+.planet2 {
+    width: 170px;  
+    height: 170px;
+    background-image: url('planet2.png');
+    
+    margin-top: 70px;
+    margin-right: 15px;
+   
+}
+.planet3 {
+    width: 133px;  
+    height: 137px; 
+    background-image: url('planet3.png');
+
+    margin-top: 80px;
+    /* margin-right: 10px; */
+}
+
+.planet4 {
+    width: 90px;  
+    height: 93px;
+    background-image: url('planet4.png');
+    
+    margin-top: -60px;
+    margin-right: 20px;
+}
+
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+
+.earth {
+    cursor: pointer;
+    animation: spin 10s linear infinite;
+    animation-play-state: paused;
+}
+
+
+.profile {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+* {
+
+    -webkit-tap-highlight-color: transparent;
+    
+    user-select: none; 
+    -webkit-touch-callout: none;
+}
