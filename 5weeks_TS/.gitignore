@@ -1,0 +1,43 @@
+# --- VS Code 관련 ---
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# --- OS 관련 (macOS & Linux) ---
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumb.db
+*~
+*.swp
+.fuse_hidden*
+.directory
+
+# --- 프로그래밍 언어별 (주요 사용 언어) ---
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# C / C++
+*.o
+*.obj
+*.out
+*.exe
+
+# Java
+*.class
+*.jar
+*.war
+.metadata/
+bin/
+
+# Node.js (JavaScript)
+node_modules/
+npm-debug.log*
